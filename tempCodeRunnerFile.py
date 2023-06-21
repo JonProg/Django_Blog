@@ -1,1 +1,0 @@
-es(s.ascii_letters + s.digits + s.punctuation, k=64))) 

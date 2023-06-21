@@ -10,7 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
+from dotenv import load_dotenv
 from pathlib import Path
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +33,6 @@ ALLOWED_HOSTS = [
     h.strip() for h in os.getenv('ALLOWED_HOSTS', '').split(',')
     if h.strip()
 ]
-
 
 # Application definition
 
@@ -127,7 +129,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = DATA_DIR / 'static'
 
-MEDIA_URL = DATA_DIR / '/media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = DATA_DIR / 'media'
 
 # Default primary key field type
