@@ -70,65 +70,65 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-a {
-    color: hsl(var(--clr-primary));
-    text-decoration: none;
-  }
+a{
+  color: hsl(var(--clr-primary));
+  text-decoration: none;
+}
   
-  a:hover {
-    color: hsl(var(--clr-primary-dk));
-    text-decoration: underline;
-  }
+a:hover{
+  color: hsl(var(--clr-primary-dk));
+  text-decoration: underline;
+}
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--ff-headings);
-    line-height: var(--lh-headings);
-    margin: var(--spacing-base) 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--ff-headings);
+  line-height: var(--lh-headings);
+  margin: var(--spacing-base) 0;
+}
   
-  h1 {
-    font-size: 44px; /* Fallback value */
-    font-size: var(--fs-h1);
-  }
-  
-  h2 {
-    font-size: 38px; /* Fallback value */
-    font-size: var(--fs-h2);
-  }
-  
-  h3 {
-    font-size: 34px; /* Fallback value */
-    font-size: var(--fs-h3);
-  }
-  
-  h4 {
-    font-size: 28px; /* Fallback value */
-    font-size: var(--fs-h4);
-  }
-  
-  h5 {
-    font-size: 24px; /* Fallback value */
-    font-size: var(--fs-h5);
-  }
-  
-  h6 {
-    font-size: 20px; /* Fallback value */
-    font-size: var(--fs-h6);
-  }
-  
-  pre {
-    max-width: 100%;
-    overflow-x: auto;
-    line-height: var(--lh-mono);
-    font-size: var(--fs-sm);
-  }
-  
-  pre,
-  code {
-    font-family: var(--ff-mono);
-  }
+h1{
+  font-size: 44px; /* Fallback value */
+  font-size: var(--fs-h1);
+}
+
+h2{
+  font-size: 38px; /* Fallback value */
+  font-size: var(--fs-h2);
+}
+
+h3{
+  font-size: 34px; /* Fallback value */
+  font-size: var(--fs-h3);
+}
+
+h4{
+  font-size: 28px; /* Fallback value */
+  font-size: var(--fs-h4);
+}
+
+h5{
+  font-size: 24px; /* Fallback value */
+  font-size: var(--fs-h5);
+}
+
+h6{
+  font-size: 20px; /* Fallback value */
+  font-size: var(--fs-h6);
+}
+
+pre{
+  max-width: 100%;
+  overflow-x: auto;
+  line-height: var(--lh-mono);
+  font-size: var(--fs-sm);
+}
+
+pre,
+code{
+  font-family: var(--ff-mono);
+}
