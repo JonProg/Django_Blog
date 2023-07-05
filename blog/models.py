@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from utils.rands import slugify_new
 from django.contrib.auth.models import User
 from django_summernote.models import AbstractAttachment
@@ -139,6 +140,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_absolute_url(self):
+        if not self.is_published:
+            return reverse('blog:index')
+        return reverse('blog:post', args=(self.slug,))
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -155,5 +161,6 @@ class Post(models.Model):
             resize_image(self.cover, 900, True, 70)
 
         return super_save
+    
 
 
