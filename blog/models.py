@@ -22,6 +22,8 @@ class PostAttachment(AbstractAttachment):
 
         return super_save
 
+#--------------------------------------------------------------------------------
+
 class Tag(models.Model):
     class Meta:
         verbose_name = 'Tag'
@@ -41,6 +43,7 @@ class Tag(models.Model):
     def __str__(self) -> str:
         return self.name
 
+#--------------------------------------------------------------------------------
 class Category(models.Model):
     class Meta:
         verbose_name = 'Category'
@@ -60,6 +63,7 @@ class Category(models.Model):
     def __str__(self) -> str:
         return self.name
 
+#--------------------------------------------------------------------------------
 class Page(models.Model):
     title = models.CharField(max_length=65,)
     slug = models.SlugField(
@@ -83,13 +87,14 @@ class Page(models.Model):
     def __str__(self) -> str:
         return self.title
 
+#--------------------------------------------------------------------------------
 class PostManager(models.Manager):
     def get_published(self):
         return self\
             .filter(is_published=True)\
             .order_by('-pk')
             
-            
+#--------------------------------------------------------------------------------
 class Post(models.Model):
     class Meta:
         verbose_name = 'Post'
@@ -161,6 +166,7 @@ class Post(models.Model):
             resize_image(self.cover, 900, True, 70)
 
         return super_save
-    
+
+#--------------------------------------------------------------------------------
 
 
