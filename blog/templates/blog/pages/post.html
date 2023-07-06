@@ -1,3 +1,6 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
 <main class="main-content single-post section-wrapper">
     <div class="single-post-content section-content-narrow">
       <div class="single-post-gap section-gap">
@@ -36,7 +39,7 @@
             <span class="post-meta-link">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>
-                  20/04/2023
+                  {{ post.created_at | date:'d/m/Y \à\s H:s' }}
                 </span>
             </span>
         </div>
@@ -58,3 +61,5 @@
       </div>
 
       <p class="single-post-excerpt pb-base">
+</main>
+{% endblock content %}
