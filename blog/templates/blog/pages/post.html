@@ -72,7 +72,7 @@
 
         </div>
 
-        <p class="single-post-excerpt pb-base">
+        <p class="single-post-excerpt pb-base center">
           {{ post.excerpt | safe }}
         </p>
 
@@ -81,6 +81,19 @@
         <div class="single-post-content">
           {{ post.content | safe  }} 
         </div>
+
+        {% if post.tags.exists %}
+          <div class="post-tags">
+              <span>Tags: </span>
+
+              {% for tag in post.tags.all %}
+                <a class="post-tag-link" href="{% url 'blog:tag' tag.slug %}">
+                  <i class="fa-solid fa-link"></i>
+                  <span>{{ tag.name }}</span>
+                </a>
+              {% endfor %}
+          </div>
+        {% endif %}
 
       </div>
     </div>
