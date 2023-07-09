@@ -142,10 +142,9 @@ class SearchListView(PostListView):
         return super().get(request, *args, **kwargs)
 
 
-class PageDatailView(DetailView):
+class PageDetailView(DetailView):
     model = Page
     template_name = 'blog/pages/page.html'
-    slug_field = 'slug'
     context_object_name = 'page'
 
     def get_context_data(self, **kwargs):
@@ -161,19 +160,19 @@ class PageDatailView(DetailView):
         return super().get_queryset().filter(is_published=True)
 
 
-def post(request, slug):
-    post_obj = Post.objects.get_published().filter(slug=slug).first()
+class PostDetailView(DetailView):
+    model = Post
+    template_name = 'blog/pages/post.html'
+    context_object_name = 'post'
 
-    if post_obj is None:
-        raise Http404()
-
-    page_title = f'{post_obj.title} - Post - '
-
-    return render(
-        request,
-        'blog/pages/post.html',
-        {
-            'post': post_obj,
-            'page_title': page_title
-        }
-    )
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+        page = self.get_object()
+        page_title = f'{page.title} - Post - '
+        ctx.update({
+            'page_tile':page_title
+        })
+        return ctx
+    
+    def get_queryset(self):
+        return super().get_queryset().filter(is_published=True)
