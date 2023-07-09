@@ -1,15 +1,15 @@
 {% extends 'blog/base.html' %}
 
 {% block additional_head %}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/python/python.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/javascript/javascript.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/htmlmixed/htmlmixed.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/xml/xml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/python/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/javascript/javascript.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/htmlmixed/htmlmixed.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/xml/xml.min.js"></script>
 {% endblock additional_head %}
 
 {% block content %}
@@ -34,7 +34,7 @@
           <div class="post-meta-item">
               <a 
               class="post-meta-link" 
-              href="{% url 'blog:created_by' post.created_by.pk  %}"
+              href="{% url 'blog:created_by' post.created_by.id  %}"
               >
                   <i class="fa-solid fa-user"></i>
                   <span>

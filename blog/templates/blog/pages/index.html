@@ -6,10 +6,10 @@
             <div class="section-gap">
 
               {% if posts %}
-              <div class="card-grid">
-                {% for post in posts %}
-                  {% include 'blog/partials/_post-card.html' with i=forloop.counter0 %}
-                {% endfor %}
+                <div class="card-grid">
+                  {% for post in posts %}
+                    {% include 'blog/partials/_post-card.html' %}
+                  {% endfor %}
               </div>
             {% else %}
               <div class="not-found center">
