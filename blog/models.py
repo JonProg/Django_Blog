@@ -4,6 +4,7 @@ from utils.rands import slugify_new
 from django.contrib.auth.models import User
 from django_summernote.models import AbstractAttachment
 from utils.images import resize_image
+from utils.model_validators import validate_img
 
 class PostAttachment(AbstractAttachment):
     def save(self, *args, **kwargs):
@@ -121,7 +122,8 @@ class Post(models.Model):
         ),
     )
     content = models.TextField()
-    cover = models.ImageField(upload_to='posts/%Y/%m/', blank=True, default='')
+    cover = models.ImageField(upload_to='posts/%Y/%m/', 
+    blank=True, default='', validators=[validate_img])
     cover_in_post_content = models.BooleanField(
         default=True,
         help_text='Se marcado, exibirá a capa dentro do post.',
