@@ -8,7 +8,7 @@
 
 ## View Post
 
-[![post-blog.png](https://i.postimg.cc/gjTtj0rn/post-blog.png)](https://postimg.cc/SYcftk6h)
+[![post-blog.png](https://i.postimg.cc/0QbXwPHb/post-blog.png)](https://postimg.cc/qhHGfVrT)
 <br><br>
 
 ## Create Post
