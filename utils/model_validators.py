@@ -1,15 +1,11 @@
-from PIL import Image
 from django.db.models import ImageField
 from django.core.exceptions import ValidationError
 
 def validate_img(image:ImageField):
-    imagem = image.image
-    imagem_pil = Image.open(imagem.path)
-
     max_area = 89478485
 
-    width = imagem_pil.width
-    height = imagem_pil.height
+    width = image.width
+    height = image.height
     area = width * height
 
     image_name = image.name.lower()
