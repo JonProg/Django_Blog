@@ -1,8 +1,10 @@
 # Django_Blog
 
-Fala players tranquilos? Fiz esse blog simples em django com o apoio de um curso que fiz.
+Fala players <img src="to_readme/emoji_programing.png" width="15" height="15" align="center">
+tranquilos? Fiz esse blog simples em django com o apoio de um curso que fiz.
 
 A parte mais interessante do projeto é a configuração do site que é feita pelo app "site_setup" onde nele podemos configurar o que deve aparecer ou adicionado.
+<br><br>
 
 ## Landing Page
 
