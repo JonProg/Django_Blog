@@ -1,4 +1,8 @@
+vercel.json
+build_files.sh
+
 # Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class
@@ -36,8 +40,6 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
-vercel.json
-build_files.sh
 
 # Unit test / coverage reports
 htmlcov/
