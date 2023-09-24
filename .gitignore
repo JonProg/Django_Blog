@@ -36,6 +36,8 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+vercel.json
+build_files.sh
 
 # Unit test / coverage reports
 htmlcov/
