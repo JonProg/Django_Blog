@@ -1,6 +1,3 @@
-vercel.json
-build_files.sh
-
 # Byte-compiled / optimized / DLL files
 
 __pycache__/
