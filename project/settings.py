@@ -84,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.app'
 
 
 # Database
@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'change-me'),
-        'NAME': os.getenv('MYSQL_DB', 'change-me'),
-        'USER': os.getenv('MYSQL_USER', 'change-me'),
-        'PASSWORD': os.getenv('MYSQL_PASSWORD', 'change-me'),
-        'HOST': os.getenv('MYSQL_HOST', 'change-me'),
-        'PORT': os.getenv('MYSQL_PORT','change-me'),
+        'NAME': os.getenv('DB_NAME', 'change-me'),
+        'USER': os.getenv('DB_USER', 'change-me'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'change-me'),
+        'HOST': os.getenv('DB_HOST', 'change-me'),
+        'PORT': os.getenv('DB_PORT','change-me'),
     }
 }
 

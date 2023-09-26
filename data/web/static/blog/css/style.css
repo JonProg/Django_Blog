@@ -75,7 +75,7 @@
   }
   
   body{
-    background-color: hsl(var(--clr-white));
+    background-color: #EDEDED;
     color: hsl(var(--clr-black));
     font-size: 20px; /* Fallback value */
     font-size: var(--fs-base);
@@ -87,13 +87,12 @@
   }
   
   a{
-    color: hsl(var(--clr-primary-base));
+    color: #ff404de9;
     text-decoration: none;
   }
   
   a:hover{
-    color: hsl(var(--clr-primary-dk));
-    text-decoration: underline;
+    color: #f5212ff5;
   }
   
   h1,
@@ -170,7 +169,7 @@
   body,
   html,
   .blog-wrapper{
-    height: 100%;
+    height: 77%;
   }
   
   .blog-wrapper{
@@ -309,7 +308,7 @@
   
   /* Footer */
   .footer{
-    background: hsl(var(--clr-gray-dk));
+    background: #ff2836;
     color: hsl(var(--clr-white));
   }
   
@@ -380,7 +379,7 @@
   
   .post-tags .post-tag-link:hover,
   .post-tags .post-tag-link:hover i{
-    color: hsl(var(--clr-primary-base));
+    color: #f5212ff5;
     text-decoration: none;
   }
   
@@ -417,6 +416,7 @@
   }
   
   .card{
+    background-color: #171717;
     border: 1px solid hsl(var(--clr-gray-ltst));
     border-radius: var(--br-base);
     box-shadow: 0 5px 5px hsl(var(--clr-black) / 0.1);
@@ -429,6 +429,7 @@
   }
   
   .card-text-wrapper{
+    color: white;
     padding: var(--spacing-base);
   }
   
