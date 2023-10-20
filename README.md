@@ -13,9 +13,9 @@ A parte mais interessante do projeto é a configuração do site que é feita pe
 
 
 ## View Post
-
-[![post-blog.png](https://i.postimg.cc/0QbXwPHb/post-blog.png)](https://postimg.cc/qhHGfVrT)
 Visualização do post quando criado (◕‿◕).
+[![post-blog.png](https://i.postimg.cc/0QbXwPHb/post-blog.png)](https://postimg.cc/qhHGfVrT)
+
 <br><br>
 
 ## Create Post
