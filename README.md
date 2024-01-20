@@ -17,7 +17,7 @@ A parte mais interessante do projeto é a configuração do site que é feita pe
 
 [![post-blog.png](https://i.postimg.cc/0QbXwPHb/post-blog.png)](https://postimg.cc/qhHGfVrT)
 
-<br><br>
+<br>
 
 ## Create Post
 <p>Modelo feito para a criação de post com categorias, tags, imagens e a possibilidade de colocar codigo no texto.</p>
